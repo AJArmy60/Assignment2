@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="quinnipiac.ser210.assignment2.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_playboardFragment"
+            app:destination="@id/playboardFragment" />
+        <argument android:name="playername" />
+    </fragment>
+    <fragment
+        android:id="@+id/playboardFragment"
+        android:name="quinnipiac.ser210.assignment2.PlayboardFragment"
+        android:label="fragment_playboard"
+        tools:layout="@layout/fragment_playboard" />
+</navigation>
